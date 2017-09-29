@@ -1,0 +1,5 @@
+Cylinder KEYWORD1;
+getState KEYWORD2;
+setState KEYWORD2;
+sensorPin KEYWORD2;
+controlPin KEYWORD2;
