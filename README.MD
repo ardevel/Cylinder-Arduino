@@ -1,10 +1,10 @@
-# Cylinder Arduino
+# Cylinder-Arduino
 
-Cylinder Arduino adalah library yang berfungsi untuk mengontrol silinder pneumatik, serta mendeteksi kondisi silinder (Push atau Pull direction).
+Cylinder-Arduino adalah library yang berfungsi untuk mengontrol dan mendeteksi kondisi silinder (Push atau Pull direction).
 
 ## Petunjuk penggunaan
 
-Buat **Object Cylinder** dengan scope global :
+Membuat **Object Cylinder** :
 
 ``` c++
 int maxSensor = 2;
@@ -18,11 +18,11 @@ Cylinder silinder_a(maxSensor,minSensor,pushPin,pullPin);
 ``` c++
 silinder_a.getState();
 ```
-perintah diatas menghasilkan return value HIGH untuk kondisi Push, dan LOW untuk kondisi Pull.
+Perintah tersebut akan me-return sebuah value. HIGH untuk Push direction, dan LOW untuk kondisi Pull direction.
 
 **Mengubah** kondisi silinder :
 
 ``` c++
 silinder_a.setState(HIGH);
 ```
-perintah tersebut akan mengubah kondisi silinder menjadi Push direction. (HIGH untuk Push, LOW untuk Pull).
+Perintah tersebut akan mengubah kondisi silinder sesuai dengan parameter yang diberikan. HIGH untuk Push, LOW untuk Pull.
