@@ -4,7 +4,7 @@ Cylinder Arduino adalah library yang berfungsi untuk mengontrol silinder pneumat
 
 ## Petunjuk penggunaan
 
-Buat objek Cylinder dengan scope global :
+Buat **Object Cylinder** dengan scope global :
 
 ``` c++
 int maxSensor = 2;
@@ -13,14 +13,14 @@ int pushPin = 4;
 int pullPin = 5;
 Cylinder silinder_a(maxSensor,minSensor,pushPin,pullPin);
 ```
-Mendeteksi kondisi silinder :
+**Mendeteksi** kondisi silinder :
 
 ``` c++
 silinder_a.getState();
 ```
 perintah diatas menghasilkan return value HIGH untuk kondisi Push, dan LOW untuk kondisi Pull.
 
-Mengubah kondisi silinder :
+**Mengubah** kondisi silinder :
 
 ``` c++
 silinder_a.setState(HIGH);
